@@ -21,6 +21,7 @@
     const INITIAL_OBJETIVOS = ['Fábrica Principal', 'Proposta 2026/05', 'Geral', 'Logística Regional'];
     const AUTH_USER_EMAIL = 'gestao1@maisintegradora.com.br';
     const USER_SECTOR_LINKS = {
+        'adm1@maisintegradora.com.br': { sector: 'Administração', role: 'colaborador', fullName: 'adm1' },
         'comercial3@maisintegradora.com.br': { sector: 'Comercial', role: 'colaborador', fullName: 'Comercial' },
         'gestao1@maisintegradora.com.br': { sector: 'Administração', role: 'gestor', fullName: 'Gestão MHS' },
         'projetos@maisintegradora.com.br': { sector: 'Sala_Técnica', role: 'colaborador', fullName: 'Sala Técnica' },
@@ -45,6 +46,7 @@
     const normalizeKey = (value) => normalizeText(value).replace(/[^a-z0-9]+/g, '');
 
     const sectorAliases = {
+        adm1: 'Administração',
         administracao: 'Administração',
         administrativo: 'Administração',
         comercial: 'Comercial',

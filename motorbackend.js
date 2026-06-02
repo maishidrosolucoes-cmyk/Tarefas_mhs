@@ -7,6 +7,7 @@ const SUPABASE_SCHEMA = 'gestao_atividades';
     const core = window.appCore || {};
     const AUTH_USER_EMAIL = String(core.AUTH_USER_EMAIL || 'gestao1@maisintegradora.com.br').toLowerCase();
     const USER_SECTOR_LINKS = core.USER_SECTOR_LINKS || {
+        'adm1@maisintegradora.com.br': { sector: 'Administração', role: 'colaborador', fullName: 'adm1' },
         'comercial3@maisintegradora.com.br': { sector: 'Comercial', role: 'colaborador', fullName: 'Comercial' },
         'gestao1@maisintegradora.com.br': { sector: 'Administração', role: 'gestor', fullName: 'Gestão MHS' },
         'projetos@maisintegradora.com.br': { sector: 'Sala_Técnica', role: 'colaborador', fullName: 'Sala Técnica' },
