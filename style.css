@@ -1,0 +1,40 @@
+/* Estilos globais do projeto.
+   Tailwind continua carregado via CDN no HTML para preservar a aparência atual. */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+/* Animações utilitárias leves para futuras interações. */
+.fade-in {
+    animation: fadeIn 180ms ease-out both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Ajuste local para limitar textos longos da ficha operacional sem depender de plugins externos. */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

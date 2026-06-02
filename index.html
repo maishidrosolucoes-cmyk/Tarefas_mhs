@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Tarefas</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+        window.addEventListener('error', function (event) {
+            const root = document.getElementById('root');
+            if (root && !root.dataset.appStarted) {
+                root.innerHTML = '<div style="font-family:Arial;padding:24px;color:#334155"><h2>Erro ao carregar o projeto</h2><p>Confira se os arquivos estão na mesma pasta: index.html, style.css, app-core.js, script.js e motorbackend.js.</p><p>Detalhe: ' + String(event.message || '') + '</p></div>';
+            }
+        });
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="bg-slate-50">
+    <div id="root">
+        <div style="font-family:Arial;padding:24px;color:#334155">Carregando sistema...</div>
+    </div>
+
+    <script src="./app-core.js?v=20260602-user-sector-links"></script>
+    <script src="./motorbackend.js?v=20260602-user-sector-links"></script>
+    <script src="./script.js?v=20260602-user-sector-links"></script>
+</body>
+</html>
